@@ -10,4 +10,9 @@
     <string name="country_flag">Country Flag</string>
     <string name="trophy_logo">Trophy Image</string>
     <string name="trophy_cabinet">Trophy Cabinet</string>
+    <string name="create_league">Create League</string>
+    <string name="team_name">Team Name</string>
+    <string name="country_code">Country Code</string>
+    <string name="type">Type</string>
+    <string name="create_competition">Create Competition</string>
 </resources>

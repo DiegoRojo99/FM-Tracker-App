@@ -4,47 +4,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    tools:context=".CreateLeagueActivity">
 
     <TextView
-        android:id="@+id/Main_User"
-        android:layout_width="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/user_name"
-        android:textSize="48sp"
+        android:text="@string/create_league"
+        android:textAlignment="center"
+        android:textSize="60sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="vertical"
-        android:layout_marginTop="16sp"
-        android:layout_marginBottom="16sp"
-        android:layout_marginStart="90sp"
-        android:layout_marginEnd="90sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Main_User">
+        app:layout_constraintTop_toBottomOf="@+id/textView2" >
+
+        <EditText
+            android:id="@+id/teamNameET"
+            android:layout_width="match_parent"
+            android:layout_height="64sp"
+            android:ems="24"
+            android:inputType="text"
+            android:hint="@string/team_name" />
+        <EditText
+            android:id="@+id/CountryCodeET"
+            android:layout_width="match_parent"
+            android:layout_height="64sp"
+            android:ems="24"
+            android:inputType="text"
+            android:hint="@string/country_code" />
+        <EditText
+            android:id="@+id/CompTypeET"
+            android:layout_width="match_parent"
+            android:layout_height="64sp"
+            android:ems="24"
+            android:inputType="text"
+            android:hint="@string/type" />
 
         <Button
-            android:id="@+id/cabinet_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/trophy_cabinet" />
-        <Button
-            android:id="@+id/loginButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/log_in" />
-        <Button
-            android:id="@+id/leagueButton"
+            android:id="@+id/createCompButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/create_competition" />
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
