@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "576203183149",
+    "project_id": "football-manager-tracker-c55f9",
+    "storage_bucket": "football-manager-tracker-c55f9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:576203183149:android:0288078f4831ea72a514a4",
+        "android_client_info": {
+          "package_name": "com.youngdredstudios.fmtracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "576203183149-0pn7rnd75884mvourantqntd4pv9p5el.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.youngdredstudios.fmtracker",
+            "certificate_hash": "83da10f23843536913cfa1981b5128449438ad50"
+          }
+        },
+        {
+          "client_id": "576203183149-a3ee47ipju85lf6mnhqnn8tagvam9hqo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzgO4B9COVZA3dDiJ_TE1JbTMfLhT_tlk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "576203183149-a3ee47ipju85lf6mnhqnn8tagvam9hqo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

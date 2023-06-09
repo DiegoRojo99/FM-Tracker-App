@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">FM Tracker</string>
+    <string name="e_mail">E-Mail</string>
+    <string name="log_in">Log In</string>
+    <string name="register">Register</string>
+    <string name="password">Password</string>
 </resources>
