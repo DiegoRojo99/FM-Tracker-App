@@ -4,4 +4,10 @@
     <string name="log_in">Log In</string>
     <string name="register">Register</string>
     <string name="password">Password</string>
+    <string name="user_name">User Name</string>
+    <string name="zero">0</string>
+    <string name="trophy_name">Trophy Name</string>
+    <string name="country_flag">Country Flag</string>
+    <string name="trophy_logo">Trophy Image</string>
+    <string name="trophy_cabinet">Trophy Cabinet</string>
 </resources>

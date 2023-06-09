@@ -4,37 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    tools:context=".TrophyCabinet">
 
     <TextView
-        android:id="@+id/Main_User"
-        android:layout_width="wrap_content"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:text="@string/user_name"
+        android:textAlignment="center"
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="vertical"
-        android:layout_marginTop="16sp"
-        android:layout_marginBottom="16sp"
-        android:layout_marginStart="90sp"
-        android:layout_marginEnd="90sp"
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="665dp"
+        android:layout_marginTop="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Main_User">
+        app:layout_constraintTop_toBottomOf="@+id/textView">
 
-        <Button
-            android:id="@+id/cabinet_button"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/trophy_cabinet" />
-    </LinearLayout>
+            android:orientation="vertical">
 
+            <include
+                layout="@layout/trophy_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

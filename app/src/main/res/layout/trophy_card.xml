@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/trophy_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background"
+        android:contentDescription="@string/trophy_logo" />
+
+    <TextView
+        android:id="@+id/trophy_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/trophy_name"
+        android:textSize="20sp"
+        android:layout_marginStart="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/trophy_logo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/country_flag"
+        android:layout_width="32sp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/trophy_counter"
+        app:layout_constraintStart_toEndOf="@+id/trophy_name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/common_full_open_on_phone"
+        android:contentDescription="@string/country_flag" />
+
+    <TextView
+        android:id="@+id/trophy_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/zero"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="@id/country_flag"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
