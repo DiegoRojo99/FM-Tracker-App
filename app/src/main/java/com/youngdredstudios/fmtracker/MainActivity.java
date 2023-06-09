@@ -17,15 +17,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Log.d("TAG_DIEGO","LLEGAMOS 1");
-
         cabinetButton = findViewById(R.id.cabinet_button);
         cabinetButton.setOnClickListener(this);
         leagueButton = findViewById(R.id.leagueButton);
         leagueButton.setOnClickListener(this);
         loginButton = findViewById(R.id.loginButton);
         loginButton.setOnClickListener(this);
-        Log.d("TAG_DIEGO","LLEGAMOS 2");
     }
 
 
