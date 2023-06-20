@@ -2,47 +2,51 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    >
+
 
     <ImageView
-        android:id="@+id/trophy_logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/iv_trophy_flag"
+        android:layout_width="120dp"
+        android:layout_height="64dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_launcher_background"
+        app:srcCompat="@drawable/race"
         android:contentDescription="@string/trophy_logo" />
+    <ImageView
+        android:id="@+id/iv_trophy_logo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/country_flag"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_trophy_flag"
+        app:layout_constraintEnd_toEndOf="@+id/iv_trophy_flag"
+        app:layout_constraintStart_toStartOf="@+id/iv_trophy_flag"
+        app:layout_constraintTop_toTopOf="@+id/iv_trophy_flag"
+        app:srcCompat="@drawable/common_full_open_on_phone" />
+
 
     <TextView
-        android:id="@+id/trophy_name"
+        android:id="@+id/tv_trophy_name"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        android:layout_marginStart="32dp"
         android:text="@string/trophy_name"
         android:textSize="20sp"
-        android:layout_marginStart="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@id/trophy_logo"
+        app:layout_constraintStart_toEndOf="@id/iv_trophy_logo"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/country_flag"
-        android:layout_width="32sp"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/trophy_counter"
-        app:layout_constraintStart_toEndOf="@+id/trophy_name"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/common_full_open_on_phone"
-        android:contentDescription="@string/country_flag" />
 
     <TextView
-        android:id="@+id/trophy_counter"
+        android:id="@+id/tv_trophy_counter"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:text="@string/zero"
         android:textSize="32sp"
-        app:layout_constraintStart_toStartOf="@id/country_flag"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_trophy_name"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -31,15 +31,15 @@
         app:layout_constraintTop_toBottomOf="@+id/Main_User">
 
         <Button
-            android:id="@+id/cabinet_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/trophy_cabinet" />
-        <Button
             android:id="@+id/loginButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/log_in" />
+        <Button
+            android:id="@+id/cabinet_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/trophy_cabinet" />
 
         <Button
             android:id="@+id/leagueButton"
