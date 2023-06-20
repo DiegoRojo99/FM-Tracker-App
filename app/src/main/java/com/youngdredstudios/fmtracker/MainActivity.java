@@ -10,7 +10,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button cabinetButton, leagueButton, loginButton;
+    Button cabinetButton, leagueButton, loginButton, allTeamsButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         leagueButton.setOnClickListener(this);
         loginButton = findViewById(R.id.loginButton);
         loginButton.setOnClickListener(this);
+        allTeamsButton = findViewById(R.id.allTeamsButton);
+        allTeamsButton.setOnClickListener(this);
     }
 
 
@@ -38,6 +40,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Intent cabinetIntent = new Intent(getApplicationContext(), CreateLeagueActivity.class);
         startActivity(cabinetIntent);
     }
+    public void goToAllTeams(){
+        Intent allTeamsIntent = new Intent(getApplicationContext(), AllTeamsActivity.class);
+        startActivity(allTeamsIntent);
+    }
 
     @Override
     public void onClick(View view) {
@@ -47,6 +53,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             goToLogin();
         }else if(view.getId()==R.id.leagueButton){
             goToLeague();
+        }else if(view.getId()==R.id.allTeamsButton){
+            goToAllTeams();
         }
     }
 }

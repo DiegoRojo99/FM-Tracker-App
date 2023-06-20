@@ -15,4 +15,6 @@
     <string name="country_code">Country Code</string>
     <string name="type">Type</string>
     <string name="create_competition">Create Competition</string>
+    <string name="create_team">Create Team</string>
+    <string name="all_teams">All Teams</string>
 </resources>

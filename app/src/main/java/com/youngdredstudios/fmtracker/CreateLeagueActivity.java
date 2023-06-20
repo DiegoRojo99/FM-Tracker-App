@@ -29,7 +29,6 @@ public class CreateLeagueActivity extends AppCompatActivity implements View.OnCl
 
         teamNameEt=findViewById(R.id.teamNameET);
         countryCodeET=findViewById(R.id.CountryCodeET);
-        typeET=findViewById(R.id.CompTypeET);
         createCompButton=findViewById(R.id.createCompButton);
         createCompButton.setOnClickListener(this);
 
@@ -45,19 +44,19 @@ public class CreateLeagueActivity extends AppCompatActivity implements View.OnCl
     private void createCompetition() {
         FirebaseFirestore db = FirebaseFirestore.getInstance();
 
-        Map<String, Object> league = new HashMap<>();
-        league.put("Name", teamNameEt.getText().toString());
-        league.put("Type", typeET.getText().toString());
-        league.put("CountryCode", countryCodeET.getText().toString());
-        league.put("Trophy", "LogoImage");
+        Map<String, Object> team = new HashMap<>();
+        team.put("Name", teamNameEt.getText().toString());
+        team.put("CountryCode", countryCodeET.getText().toString());
 
-        db.collection("Competition").document()
-                .set(league)
+        String badge = teamNameEt.getText().toString().toLowerCase().replace(" ", "");
+        team.put("Badge", badge+".png");
+
+        db.collection("Teams").document()
+                .set(team)
                 .addOnSuccessListener(aVoid -> Log.d(TAG, "DocumentSnapshot successfully written!"))
                 .addOnFailureListener(e -> Log.w(TAG, "Error writing document", e));
 
         teamNameEt.getText().clear();
-        typeET.getText().clear();
         countryCodeET.getText().clear();
 
     }

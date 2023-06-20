@@ -40,18 +40,11 @@
             android:ems="24"
             android:inputType="text"
             android:hint="@string/country_code" />
-        <EditText
-            android:id="@+id/CompTypeET"
-            android:layout_width="match_parent"
-            android:layout_height="64sp"
-            android:ems="24"
-            android:inputType="text"
-            android:hint="@string/type" />
 
         <Button
             android:id="@+id/createCompButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/create_competition" />
+            android:text="@string/create_team" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
